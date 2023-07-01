@@ -3,10 +3,9 @@ import { BsSearch } from 'react-icons/bs';
 
 import './SearchBar.css';
 
+function SearchBar() {
 
-function SearchBar(){
-
-  const [searchValue, setSearchValue] = useState('exemplo');
+  const [searchValue, setSearchValue] = useState('');
 
   return (
     <form className="search-bar">
