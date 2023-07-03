@@ -7,6 +7,7 @@
   cursor: pointer;
   margin: 0 auto;
   position: relative;
+  padding: 10px;
 }
 
 .card__image{
