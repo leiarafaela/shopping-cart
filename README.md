@@ -8,5 +8,4 @@ Runs the app in the development mode.
 
 ## Deploy
 
-### https://shopping-cart-three-swart.vercel.app/
-
+### https://shopping-cart-leiarafaela.vercel.app/
