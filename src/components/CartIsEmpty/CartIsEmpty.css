@@ -1,0 +1,13 @@
+.cart-is-empty{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.empty-cart{
+  color:  #a3a1a1;
+  font-size: 3.5rem;
+}
