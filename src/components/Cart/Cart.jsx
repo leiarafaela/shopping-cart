@@ -9,7 +9,7 @@ function Cart(){
   const { cartItems, isCartVisible } = useContext(AppContext);
 
   const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
-
+ 
    
   return(
     <section className={`cart ${isCartVisible? 'cart--active' :''} `}>
@@ -18,6 +18,10 @@ function Cart(){
       </div>
 
       <div className="cart-resumo">Total: {formatCurrency(totalPrice, 'BRL')}</div>
+      <button 
+        type="button" 
+        className="button__payment"
+      >Ir para paragamento</button>
     </section>
 
   );

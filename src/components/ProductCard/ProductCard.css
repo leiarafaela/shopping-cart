@@ -8,6 +8,7 @@
   margin: 0 auto;
   position: relative;
   padding: 10px;
+  border-radius: 8px;
 }
 
 .card__image{
