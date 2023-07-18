@@ -7,12 +7,17 @@ import CartButton from '../CartButton/CartButton';
 function Header() {
   return (
     <header className="header">
+    
       <div className="container">
         <SearchBar/>
-        <CartButton/>
-
+        <div className="card-login">
+          <CartButton/>
+          <a href="/login">Entre</a>
+        </div>
+        
       </div>
-     
+      
+      
     </header>
   );
 }

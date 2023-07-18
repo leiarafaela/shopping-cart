@@ -11,3 +11,15 @@
   align-items: center;
   padding: 20px;
 }
+
+.card-login{
+  display: flex;
+  align-items: center;
+}
+
+a{
+  text-decoration: underline;
+  color: black;
+  padding-left: 40px;
+  cursor: pointer;
+}

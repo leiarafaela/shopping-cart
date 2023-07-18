@@ -12,6 +12,7 @@
   justify-content: space-between;
   transform: translate(110%, 0);
   transition: all 400ms ease;
+  border-left: 1px solid #ddd;
 }
 
 .cart-items {
@@ -20,9 +21,9 @@
 }
 
 .cart-resumo {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  padding: 35px 0 15px;
+  padding: 20px 0 15px;
   border-top: 1px solid #ddd;
 }
 
@@ -32,4 +33,17 @@
 
 .cart--active {
   transform: translate(0, 0);
+}
+
+.button__payment{
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #009ee3;
+  color: white;
+  cursor: pointer;
+}
+
+.button__payment:hover {
+  background-color: #0284bb;
 }

@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import propTypes from 'prop-types';
 
 import { AiFillDelete } from 'react-icons/ai';
-import './CartItem.css';
 import formatCurrency from '../../utils/formatCurrency';
 import AppContext from '../../context/AppContext';
+import './CartItem.css';
 
 function CartItem({ data }){
 
