@@ -4,11 +4,15 @@ import Provider from '../../context/Provider';
 import Header from '../../components/Header/Header';
 import Products from '../../components/Products/Products';
 import Cart from '../../components/Cart/Cart';
+import useToken from '../../services/useToken';
 
 function Home(){
+
+  const {removeToken} = useToken();
+
   return(
     <Provider>
-      <Header/>
+      <Header token={removeToken}/>
       <Products/>
       <Cart/>
     </Provider>
