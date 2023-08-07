@@ -8,35 +8,35 @@ import CartItem from '../CartItem/CartItem';
 import AppContext from '../../context/AppContext';
 import formatCurrency from '../../utils/formatCurrency';
 import CartIsEmpty from '../CartIsEmpty/CartIsEmpty';
+import { useNavigate } from 'react-router-dom';
 
 function Cart(){
   const { cartItems, isCartVisible } = useContext(AppContext);
   const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
+  const logged = localStorage.getItem('email');
+  const navigate = useNavigate();
 
   function btnPayment(){
-    axios({
-      method: 'POST',
-      url: 'http://localhost:5000/mp/pagamento',
-      data:{
-        value: totalPrice,
-      }
-    }).then((response) => {
-   
-      console.log(response.data.response.init_point);
-      window.location.href = response.data.response.init_point;
-      
-    }).catch(
-      (error) => {
-        if (error.response) {
-          console.log(error.response);
-          alert('Erro');
+    logged?
+      axios({
+        method: 'POST',
+        url: 'http://localhost:5000/mp/pagamento',
+        data:{
+          value: totalPrice,
         }
-      }
-    );
-
-    // window.location.href = preferenceId;
-
-    
+      }).then((response) => {
+   
+        console.log(response.data.response.init_point);
+        window.location.href = response.data.response.init_point;
+      
+      }).catch(
+        (error) => {
+          if (error.response) {
+            console.log(error.response);
+            alert('Erro');
+          }
+        }
+      ): navigate('/login');  
   }
    
   return(
