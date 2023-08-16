@@ -26,7 +26,7 @@ function Header(props) {
       (error) => {
         if (error.response) {
           console.log(error.response);
-          alert('Erro');
+          alert('Ocorreu um erro!');
         }
       }
     );
