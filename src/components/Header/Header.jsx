@@ -32,7 +32,7 @@ function Header(props) {
     );
   }
 
-  const logged = localStorage.getItem('email') ;
+  const logged = localStorage.getItem('email');
 
   return (
     <header className="header">
