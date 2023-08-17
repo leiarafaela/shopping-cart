@@ -2,7 +2,6 @@ import React, { useContext, useState  } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { initMercadoPago } from '@mercadopago/sdk-react';
-initMercadoPago('TEST-42872054-5ffc-4331-8889-2afab80d6a15');
 
 import './Cart.css';
 import CartItem from '../CartItem/CartItem';
@@ -10,6 +9,7 @@ import AppContext from '../../context/AppContext';
 import formatCurrency from '../../utils/formatCurrency';
 import CartIsEmpty from '../CartIsEmpty/CartIsEmpty';
 import LoadingButton from '../LoadingButton/LoadingButton';
+initMercadoPago('TEST-42872054-5ffc-4331-8889-2afab80d6a15');
 
 
 function Cart(){
