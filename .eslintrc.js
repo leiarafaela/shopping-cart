@@ -21,17 +21,17 @@ module.exports = {
       'error',
       'windows'
     ],
-      'quotes':[
-        'error',
-        'always'
-      ],
-      'semi': [
-        'error',
-        'always'
+    'quotes':[
+      'error',
+      'single'
+    ],
+    'semi': [
+      'error',
+      'always'
     ],
     'jsx-quotes':[
-        2,
-        'prefer-double'
+      2,
+      'prefer-double'
     ],
   },
 };
