@@ -17,10 +17,6 @@ module.exports = {
       'error', 
       2
     ],
-    'linebreak-style':[
-      'error',
-      'windows'
-    ],
     'quotes':[
       'error',
       'single'
@@ -33,6 +29,7 @@ module.exports = {
       2,
       'prefer-double'
     ],
+    'linebreak-style': 0, 
   },
   settings: {
     'react': {
