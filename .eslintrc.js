@@ -34,4 +34,10 @@ module.exports = {
       'prefer-double'
     ],
   },
+  settings: {
+    'react': {
+      'version': 'detect'
+    }
+  }
+  
 };
